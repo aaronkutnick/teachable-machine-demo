@@ -53,7 +53,7 @@
         const detectedClass = prediction.reduce((best, current) =>
             current.probability > best.probability ? current : best
         );
-        const backgroundColors = { hand: "purple", coffee: "green" };
+        const backgroundColors = { hand: "red", coffee: "green" };
         const backgroundColor = backgroundColors[detectedClass.className.trim().toLowerCase()];
         if (backgroundColor) {
             document.body.style.backgroundColor = backgroundColor;
